@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('digital-7/digital-7.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Digital-7-mono';
+  src: url('digital-7/digital-7 (mono).ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Digital-7-italic';
+  src: url('digital-7/digital-7 (italic).ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Digital-7-mono-italic';
+  src: url('digital-7/digital-7 (mono-italic).ttf') format('truetype');
+}
+
+body {
+    font-family: 'Digital-7', 'sans-serif'; /* Use fallback font in case 'Technology' isn't available */
+    height: 100vh;
+    background-color: grey;
+}
+
+.calculator {
+    display: grid;
+    background-color: #ffffff;
+    border: solid 3px green;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    height: 600px;
+    border-radius: 15px;
+    width: 95%;
+    margin: 8px;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: #474747;
+    color: #000000;
+    padding: 10px;
+    text-align: left;
+    font-size: 2.1rem;
+    height: 50px;
+    margin: 10px;
+    border: solid 3px #000000;
+    border-radius: 10px;
+    font-family: 'Digital-7-mono', sans-serif;
+    overflow: hidden;
+}
+
+.button {
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 17px;
+    border: solid 1.5px #000000;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.equalizer {
+    grid-row: span 2;
+}
+
+.dot {
+    grid-row: span 2;
+}
+
+.logo {
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.logoC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty{
+    background-color: #ffffff;
+}
+
+.solarC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solar {
+    background-color: #070554;
+    color: #070554;
+    grid-column: span 2;
+    height: 10px;
+}
+
+.memo {
+ background: radial-gradient(circle, #00ca00, #007001);
+}
+
+.memo:active {
+ background: radial-gradient(circle, #007001, #00ca00);
+}
+
+.operation {
+ background: radial-gradient(circle, #04a0fd, #051e66);
+}
+
+.operation:active {
+ background: radial-gradient(circle, #051e66, #04a0fd);
+}
+
+.clear {
+  background: radial-gradient(circle, #fe0000, #5d1916);
+}
+
+.clear:active {
+  background: radial-gradient(circle, #5d1916, #fe0000);
+}
+
+
